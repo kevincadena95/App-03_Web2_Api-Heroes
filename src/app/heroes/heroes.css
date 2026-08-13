@@ -1,58 +1,47 @@
-.contenedor-productos {
+.contenedorHeroes {
+    width: 90%;
+    margin: auto;
+}
+
+.tarjetaHeroe {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 20px;
     padding: 20px;
-    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #016acc;
+    color: white;
 }
 
-.productos {
-    border-radius: 15px;
-    padding: 20px;
+.contenedorImagen {
     text-align: center;
-    background-color: #083a57; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    margin:20px;
-    padding: auto;
-    
 }
 
-p {
-    font-weight: bold;
-    margin: 10px;
+.contenedorImagen img {
+    width: 170px;
+    height: 230px;
+    object-fit: cover;
 }
 
-h3 {
-    font-weight: bold;
-    margin: 10px;
+.contenedorImagen h2 {
+    margin-top: 10px;
 }
 
-.titulo {
-    text-align: center;
-    margin-top: 25px;
-    font-weight: bold;
-    color: #01579b; 
-    
+
+.contenedorInfo {
+    padding: 10px;
 }
 
-.productoImg {
-    width: 250px;
-    height: 400px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto; 
-    border-style: double;
-    border-color: #01579b;
+.contenedorPoderes {
+    padding: 10px;
 }
 
-.disponible {
-    color: green;
+.contenedorInfo h3, .contenedorPoderes h3 {
+    margin-top: 0;
 }
 
-.agotado {
-    color: red;
+.contenedorInfo p, .contenedorPoderes p {
+    margin: 10px 0;
 }
+
+

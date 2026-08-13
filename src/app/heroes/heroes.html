@@ -1,19 +1,43 @@
-<h2 class="titulo">NUESTRAS PELÍCULAS:</h2>
-<div>
+<h2 class="titulo">Personajes:</h2>
 
-    <div class="contenedor-productos">
-        @for (heroe of heroes; track heroe.id){
-        <div class="productos">
-            <h2>{{heroe.name}}</h2>
-            
+<div class="contenedorHeroes">
+
+    @for (heroe of heroes; track heroe.id) {
+
+        @if (heroe.biography.publisher === 'DC Comics' || heroe.biography.publisher === 'Superman Prime One-Million') {
+
+    <div class="tarjetaHeroe">
+
+        <div class="contenedorImagen">
+            <h2>{{ heroe.name }}</h2>
+            <img [src]="heroe.images.md" [alt]="heroe.name">            
         </div>
-        }
+
+        <div class="contenedorInfo">
+            @if (heroe.biography.fullName) {
+            <p><strong>Nombre Real:</strong> {{ heroe.biography.fullName }}</p>
+            }
+            <p><strong>Género:</strong> {{ heroe.appearance.gender }}</p>
+            @if (heroe.appearance.race) {
+            <p><strong>Raza:</strong> {{ heroe.appearance.race }}</p>
+            }
+            <p><strong>Alineación:</strong> {{ heroe.biography.alignment }}</p>
+            <p><strong>Primera Aparición:</strong> {{ heroe.biography.firstAppearance }}</p>
+        </div>
+
+
+        <div class="contenedorPoderes">
+            <h3>Poderes:</h3>
+            <p><strong>Inteligencia:</strong> {{ heroe.powerstats.intelligence }}</p>
+            <p><strong>Fuerza: </strong>{{ heroe.powerstats.strength }}</p>
+            <p><strong>Velocidad:</strong> {{ heroe.powerstats.speed }}</p>
+            <p><strong>Durabilidad:</strong> {{ heroe.powerstats.durability }}</p>
+            <p><strong>Poder: </strong>{{ heroe.powerstats.power }}</p>
+            <p><strong>Combate:</strong> {{ heroe.powerstats.combat }}</p>
+        </div>
 
     </div>
-
-
-
-
-
+        }
+    }
 
 </div>
