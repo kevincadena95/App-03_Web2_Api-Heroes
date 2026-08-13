@@ -1,0 +1,21 @@
+.footer {
+    background: #062B40;  
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    
+}
+
+
+.footer p {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    transition: .3s;
+}
+

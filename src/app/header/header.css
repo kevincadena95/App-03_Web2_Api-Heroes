@@ -1,0 +1,52 @@
+.header-nav {
+    background: #062B40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+
+}
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    
+}
+
+.nombre-logo {
+    align-self: auto;
+    display: flex;
+    align-items: center;
+    gap: 10 px
+
+}
+
+h1 {
+    margin-right: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.nav-bar a.activo {
+    color: rgb(104, 206, 255);
+    
+    border-bottom: 2px solid  rgb(104, 206, 255);
+}
