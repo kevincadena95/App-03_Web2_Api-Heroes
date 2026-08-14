@@ -1,47 +1,72 @@
+.titulo {
+    width: 85%;
+    margin: 25px auto 30px;
+    text-align: left;
+    color: #023b5e;
+    font-size: 28px;
+}
+
 .contenedorHeroes {
     width: 90%;
-    margin: auto;
+    margin: 0 auto 30px;
 }
 
 .tarjetaHeroe {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #016acc;
-    color: white;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background-color: #addff3;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #016acc;
 }
 
 .contenedorImagen {
     text-align: center;
 }
 
+.contenedorImagen h2 {
+    margin: 0 0 15px;
+    color: #023b5e;
+    font-size: 22px;
+}
+
 .contenedorImagen img {
     width: 170px;
     height: 230px;
     object-fit: cover;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0px #016acc;
 }
-
-.contenedorImagen h2 {
-    margin-top: 10px;
-}
-
 
 .contenedorInfo {
-    padding: 10px;
+    padding: 10px 20px;
+    border-left: 1px solid #ccc;
 }
 
 .contenedorPoderes {
-    padding: 10px;
+    padding: 10px 20px;
+    border-left: 1px solid #ccc;
 }
 
-.contenedorInfo h3, .contenedorPoderes h3 {
+.contenedorInfo h3,
+.contenedorPoderes h3 {
     margin-top: 0;
+    margin-bottom: 18px;
+    color: #023b5e;
+    font-size: 20px;
 }
 
-.contenedorInfo p, .contenedorPoderes p {
-    margin: 10px 0;
+.contenedorInfo p,
+.contenedorPoderes p {
+    margin: 12px 0;
+    line-height: 1.5;
 }
 
-
+.contenedorInfo strong,
+.contenedorPoderes strong {
+    color: #111;
+}
