@@ -47,5 +47,5 @@ h1 {
 
 .nav-bar a.activo {
     color: rgb(104, 206, 255);
-    
+    font-weight: bold;
 }

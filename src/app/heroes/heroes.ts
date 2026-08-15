@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { HeroesService } from '../service/heroes-service';
 import { CommonModule } from '@angular/common';
 
@@ -11,12 +11,12 @@ import { CommonModule } from '@angular/common';
 export class Heroes {
 
   private heroesService = inject(HeroesService);
-  heroes: any[] = [];
+  heroes= signal<any[]>([]);
 
   ngOnInit() {
     this.heroesService.obtenerHeroes().subscribe(data => {
       console.log(data);
-      this.heroes = data;
+      this.heroes.set(data);
     });
   }
 

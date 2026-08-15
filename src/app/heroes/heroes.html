@@ -2,7 +2,7 @@
 
 <div class="contenedorHeroes">
 
-    @for (heroe of heroes; track heroe.id) {
+    @for (heroe of heroes(); track heroe.id) {
 
         @if (heroe.biography.publisher === 'DC Comics' || heroe.biography.publisher === 'Superman Prime One-Million') {
 

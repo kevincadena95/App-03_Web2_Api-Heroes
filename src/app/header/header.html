@@ -1,16 +1,17 @@
 <header class="header-nav">
 
     <div class="nombre-logo">
-    <img src="https://i.postimg.cc/cHFpGSPC/dclogo.webp">
-    <h1>DC COMICS DATABASE</h1>
+        <img src="https://i.postimg.cc/cHFpGSPC/dclogo.webp">
+        <h1>DC COMICS DATABASE</h1>
     </div>
 
     <nav class="nav-bar">
-        <a routerLink="/" routerLinkActive="activo">Home</a>
-        <a routerLink="/heroes" routerLinkActive="activo">Personajes</a>
-        <a routerLink="/nosotros" routerLinkActive="activo">Nosotros</a>
-        <a routerLink="/contacto" routerLinkActive="activo">Contacto</a>
-        
+        <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">
+            HOME
+        </a>
+        <a routerLink="/heroes" routerLinkActive="activo">PERSONAJES</a>
+        <a routerLink="/nosotros" routerLinkActive="activo">NOSOTROS</a>
+        <a routerLink="/contacto" routerLinkActive="activo">CONTACTO</a>
+
     </nav>
 </header>
-
