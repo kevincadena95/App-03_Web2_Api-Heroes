@@ -1,1 +1,49 @@
-<p>contacto works!</p>
+<div class="pagina">
+
+<h2>CONTÁCTANOS!</h2>
+
+<div class="contenedorFormulario">
+
+    <div class="div1">
+        <form [formGroup]="formularioContacto" (ngSubmit)="enviar()">
+
+            <label>Nombre: </label>
+            <input formControlName="nombre" type="text">
+
+            @if (formularioContacto.get('nombre')?.hasError('required')) {
+            <label class="error">El nombre es obligatorio.</label>
+            }
+
+            <label>Email: </label>
+            <input formControlName="email" type="email">
+            
+            @if (formularioContacto.get('email')?.hasError('required')) {
+            <label class="error">El email es obligatorio.</label>
+            }
+            @if (formularioContacto.get('email')?.hasError('email')) {
+            <label class="error">Ingrese un email valido.</label>
+            }
+
+            <label>Teléfono: </label>
+            <input formControlName="telefono" type="tel">
+
+            @if (formularioContacto.get('telefono')?.hasError('required')) {
+            <label class="error">El telefono es obligatorio.</label>
+            }
+
+            <label>Solicitud: </label>
+            <input formControlName="descripcion" type="text">
+
+            @if (formularioContacto.get('descripcion')?.hasError('required')) {
+            <label class="error">La solicitud es obligatoria.</label>
+            }
+            
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+</div>
+
+</div>
